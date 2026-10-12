@@ -1,7 +1,5 @@
 <img width="1128" height="191" alt="machine-readable-linkedin-banner" src="https://github.com/user-attachments/assets/7117ada4-6875-4884-9c43-61bd7d67e7d0" />
 
-Public datasets, synthesized daily into insights no single dataset holds alone.
-
 Machine Readable fuses government datasets that were never meant to be read together — building permits with zoning maps, crash reports with bike infrastructure, 311 complaints with field observations — and publishes the analysis free for advocates, journalists, and anyone trying to understand their city.
 
 Every brief is open and reproducible: full write-up, charts, code, and data. No paywall, no black box.
