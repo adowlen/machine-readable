@@ -1,3 +1,5 @@
+<img width="1128" height="191" alt="machine-readable-linkedin-banner" src="https://github.com/user-attachments/assets/7117ada4-6875-4884-9c43-61bd7d67e7d0" />
+
 # Machine Readable
 
 Public datasets, synthesized daily into insights no single dataset holds alone.
