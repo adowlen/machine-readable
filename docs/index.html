@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Machine Readable publishes free, open, reproducible civic data briefs for advocates, journalists, and residents.">
+  <title>Machine Readable - Civic data, read together</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #101417;
+      --panel: #171d21;
+      --panel-2: #1d2429;
+      --text: #f2f0e9;
+      --muted: #b8c0c4;
+      --amber: #f5a800;
+      --amber-soft: #ffd166;
+      --teal: #19b8a6;
+      --teal-soft: #83e6da;
+      --line: #30383e;
+      --shadow: rgba(0, 0, 0, 0.28);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 12% 0%, rgba(245, 168, 0, 0.13), transparent 30rem),
+        radial-gradient(circle at 88% 8%, rgba(25, 184, 166, 0.12), transparent 28rem),
+        var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-system, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+
+    a { color: var(--teal-soft); }
+
+    .wrap {
+      width: min(1120px, calc(100% - 2rem));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 4.5rem 0 2.5rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      margin: 0 0 1rem;
+      color: var(--amber-soft);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      width: 0.72rem;
+      height: 0.72rem;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--amber), var(--teal));
+      content: "";
+    }
+
+    h1 {
+      max-width: 780px;
+      margin: 0;
+      font-size: clamp(2.7rem, 8vw, 5.8rem);
+      line-height: 0.95;
+      letter-spacing: -0.055em;
+    }
+
+    h1 span { color: var(--amber); }
+
+    .mission {
+      max-width: 760px;
+      margin: 1.35rem 0 0;
+      color: var(--muted);
+      font-size: clamp(1.08rem, 2vw, 1.3rem);
+    }
+
+    .principles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 1.6rem;
+    }
+
+    .principles span {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.035);
+      padding: 0.38rem 0.75rem;
+      color: var(--text);
+      font-size: 0.9rem;
+      font-weight: 650;
+    }
+
+    main { padding: 2.4rem 0 3.5rem; }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1.2rem;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(1.65rem, 4vw, 2.4rem);
+      letter-spacing: -0.03em;
+    }
+
+    .section-head p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      display: flex;
+      min-height: 100%;
+      flex-direction: column;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: linear-gradient(145deg, var(--panel), var(--panel-2));
+      box-shadow: 0 18px 42px var(--shadow);
+    }
+
+    .card.featured { grid-column: span 2; }
+
+    .card img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 6.5;
+      object-fit: cover;
+      border-bottom: 1px solid var(--line);
+      background: #0b0e10;
+    }
+
+    .card-body {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      padding: 1.35rem;
+    }
+
+    .date {
+      margin: 0 0 0.5rem;
+      color: var(--amber-soft);
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      margin: 0 0 0.7rem;
+      font-size: 1.55rem;
+      line-height: 1.12;
+      letter-spacing: -0.025em;
+    }
+
+    .summary {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .repo-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      width: fit-content;
+      margin-top: auto;
+      padding-top: 1.25rem;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .repo-link:hover { text-decoration: underline; }
+    .repo-link::after { content: "->"; color: var(--amber); }
+
+    .note {
+      margin-top: 1rem;
+      border-left: 4px solid var(--teal);
+      background: rgba(25, 184, 166, 0.08);
+      padding: 1rem 1.15rem;
+      color: var(--muted);
+    }
+
+    .note strong { color: var(--text); }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 1.4rem 0 2rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 720px) {
+      header { padding-top: 3rem; }
+      .grid { grid-template-columns: 1fr; }
+      .card.featured { grid-column: span 1; }
+      .card img { aspect-ratio: 16 / 9; }
+      .section-head { display: block; }
+      .section-head p { margin-top: 0.35rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <p class="eyebrow">Machine Readable</p>
+      <h1>Civic data, <span>read together.</span></h1>
+      <p class="mission">Machine Readable fuses government datasets that were never meant to be read together and publishes the analysis free for advocates, journalists, and anyone trying to understand their city.</p>
+      <div class="principles" aria-label="Project principles">
+        <span>Free</span>
+        <span>Open</span>
+        <span>Reproducible</span>
+        <span>Full write-up, charts, code, and data</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="section-head">
+      <h2>Published briefs</h2>
+      <p>Every brief links to its full public repository.</p>
+    </div>
+
+    <section class="grid" aria-label="Published Machine Readable briefs">
+      <article class="card featured">
+        <img src="https://raw.githubusercontent.com/adowlen/denver-311-data-brief/main/charts/hero-graphic.webp" alt="Hero graphic for the Denver 311 data brief">
+        <div class="card-body">
+          <p class="date">October 12, 2026</p>
+          <h3>Denver 311</h3>
+          <p class="summary">1,381,852 service requests across 2023-2025: the apparent late-2025 collapse in encampment reports was a category migration, not a real decline, and geocoded field-work resolution in District 6 ran about 3.6x slower than District 11 in 2023.</p>
+          <a class="repo-link" href="https://github.com/adowlen/denver-311-data-brief">Read the brief repository</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <p class="date">October 11, 2026</p>
+          <h3>Denver Housing Permits</h3>
+          <p class="summary">30,902 permits vs the city's own growth plan: 75% of new homes went up outside it, 81% away from rail. The plan is decorative.</p>
+          <a class="repo-link" href="https://github.com/adowlen/denver-housing-permits-data-brief">Read the brief repository</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <p class="date">October 10, 2026</p>
+          <h3>Denver Bike Safety</h3>
+          <p class="summary">3,521 bike crashes vs infrastructure: 80% happened where there's no bike lane. The lanes go where the crashes aren't.</p>
+          <a class="repo-link" href="https://github.com/adowlen/denver-bike-safety-data-brief">Read the brief repository</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <p class="date">October 8, 2026</p>
+          <h3>Denver Tree of Heaven</h3>
+          <p class="summary">731 observations + 311 weed complaints vs Colorado's noxious weed lists: the case for upgrading tree of heaven from List C to List B, or for Denver to act alone.</p>
+          <a class="repo-link" href="https://github.com/adowlen/denver-tree-of-heaven-data-brief">Read the brief repository</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <p class="date">October 8, 2026</p>
+          <h3>Denver Homelessness</h3>
+          <p class="summary">Denver spends roughly $105,000 per long-term housing exit (about $178.1M against roughly 1,700 exits): a 43% housing-exit rate for people brought indoors, and shelter beds at roughly $34,000-$36,000 per bed per year, on par with permanent housing.</p>
+          <a class="repo-link" href="https://github.com/adowlen/denver-homelessness-data-brief">Read the brief repository</a>
+        </div>
+      </article>
+    </section>
+
+    <aside class="note">
+      <strong>Bring this to your city.</strong> The data is already public where you live too. Fork a brief repository, point the same playbook at your city's open data portal, and publish what you find.
+    </aside>
+  </main>
+
+  <footer>
+    <div class="wrap">Machine Readable - free, open, reproducible civic data. Reuse with attribution.</div>
+  </footer>
+</body>
+</html>
