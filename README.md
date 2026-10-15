@@ -12,6 +12,7 @@ Every brief is open and reproducible: full write-up, charts, code, and data. No 
 
 | Date | Brief | The one-line version |
 |------|-------|----------------------|
+| 2026-10-15 | [Denver Net Housing Change](https://github.com/adowlen/denver-net-housing-change-data-brief) | Denver permitted 11,585 new residential buildings and 3,837 demolitions from January 2020 to October 2026, a net of 7,748 structures; 60 percent of demolitions were followed by a new-building permit at the same address, and 11 neighborhoods demolished more than they built. |
 | 2026-10-15 | [Denver Lead Service Lines](https://github.com/adowlen/denver-lead-service-lines-data-brief) | 21,426 premises remain in Denver Water's Lead Reduction Program: 18,775 are in the City and County of Denver, one in ten city premises, and in five neighborhoods more than half of all inventoried premises are still in the program. |
 | 2026-10-14 | [Nashville STR Permits](https://github.com/adowlen/nashville-str-permits-data-brief) | 7,017 permits in force: 71.4% are not owner occupied, 49.9% of investor permits are owned from outside Davidson County, and only 5.2% sit on single-family parcels. It is a buildings market. |
 | 2026-10-13 | [Data Center Water, Compared](https://github.com/adowlen/us-data-center-water-comparison) | Irrigation used up about 101 trillion liters in 2015; every US data center combined used 0.86% of that. One day of farm use equals about 117 days of data centers. Most charts in this fight mix water taken out with water used up - a 31x cheat. |
