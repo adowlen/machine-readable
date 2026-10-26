@@ -12,6 +12,7 @@ Every brief is open and reproducible: full write-up, charts, code, and data. No 
 
 | Date | Brief | The one-line version |
 |------|-------|----------------------|
+| 2026-10-26 | [Denver Traffic Signals](https://github.com/adowlen/denver-traffic-signals-data-brief) | Denver's traffic signal register lists 1,288 signals and records an installation, rebuild, or major retime date for none of them - 0 of 1,288 on each field - so the fleet's age cannot be read from the public record; 34.5 percent of geocoded crashes since 2021 fall within 150 feet of a signal. |
 | 2026-10-24 | [Denver Liquor Licenses](https://github.com/adowlen/denver-liquor-licenses-data-brief) | Five neighborhoods hold 554 of Denver's 1,965 active liquor licenses (28.2 percent) on 7.4 percent of the city's residents; the CBD records 20.7 active licenses per 1,000 residents against a citywide 2.7. |
 | 2026-10-23 | [Denver Tree Inventory](https://github.com/adowlen/denver-tree-inventory-data-brief) | 33,479 ash trees among 305,295 inventoried trees (11.0 percent): Marston is 29.6 percent ash, Gateway - Green Valley Ranch holds the most ash at 2,374, and the inventory's own EAB field is blank for 87.1 percent of ash. |
 | 2026-10-21 | [Denver Affordable Housing Inventory](https://github.com/adowlen/denver-affordable-housing-data-brief) | 29,474 income-restricted units in 497 projects: the inventory records at least one project in 63 of 78 neighborhoods and none in 15; Five Points holds 2,757 units, and all 2,628 supportive units sit in rental projects. |
