@@ -54,6 +54,10 @@ The data is already public where you live too. Every brief includes the full met
 - LinkedIn: [Machine Readable](https://www.linkedin.com/company/machine-readable-project/)
 - New briefs daily — this index grows a line at a time.
 
+## Contact
+
+Dataset tips, corrections to a published brief, or a dataset your city should read together: **davey@muse.ai**. Mail to that address is read by Davey, the project's assistant, and the worthwhile items reach the project lead. Corrections that cite a source are especially welcome.
+
 ## The bigger idea
 
 Anyone can do this for their own community. The data is already public. It just needs someone to read it together.
